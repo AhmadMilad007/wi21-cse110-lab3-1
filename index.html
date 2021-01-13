@@ -7,6 +7,7 @@
     <title>Donald Wolfson's User Page</title>
     <meta name="description" content="Donald Wolfson's User Page">
     <meta name="author" content="Donald Wolfson">
+    <link href="styles.css" type="text/css">
 </head>
 
 <body>
@@ -20,6 +21,7 @@
         <a href="#whatilooklike">What do I look like?</a> |
         <a href="#coolconcept">A cool concept I've learned</a> |
         <a href="#mycats">My Cats</a> |
+        <a href="#multimedia">Multimedia</a> |
         <a href="#form">A Form</a> |
     </nav>
 
@@ -68,7 +70,8 @@
             <p>Below are some cool concepts that I've learned in HTML!</p>
             <ul>
                 <li>I can color parts of text using <b>span</b>, like <span style="color:#A5FFC9">this!</span></li>
-                <li>There are a lot of ways of bolding text in HTML, like using <strong>strong</strong>, just like that!</li>
+                <li>There are a lot of ways of bolding text in HTML, like using <strong>strong</strong>, just like that!
+                </li>
                 <li>Incase I want to have some fancy text, I can also <i>italicize</i> it.</li>
                 <li>Another way to italicize text is to emphasize it, <em>just like this!</em></li>
             </ul>
@@ -81,8 +84,8 @@
             </pre>
             <iframe src="canvas.html" height="200" width="200" title="Iframe Example"></iframe>
             <p>
-                I wish it printed this out, but sadly this is just an iframe 
-                element of a canvas file inside of this directory. <br> 
+                I wish it printed this out, but sadly this is just an iframe
+                element of a canvas file inside of this directory. <br>
                 Also, below if a cool image of a SVG circle!
             </p>
             <svg width="200" height="200">
@@ -94,9 +97,9 @@
 
         <section id="mycats">
             <p>
-                Below are images of my mom’s cats. They are my chonkers, one is 
-                very chonky (summer), and the other is very old (Cali). They 
-                both don’t like each other, so sadly there will be seperate 
+                Below are images of my mom’s cats. They are my chonkers, one is
+                very chonky (summer), and the other is very old (Cali). They
+                both don’t like each other, so sadly there will be seperate
                 images:
             </p>
 
@@ -119,10 +122,27 @@
                         <picture>
                             <img src="images/Summer.png" alt="A picture of Summer">
                         </picture>
-                        <p>Now that is one Chonk!</p>
+                        <p>
+                            Now that is one Chonk!
+                        </p>
                     </td>
                 </tr>
             </table>
+        </section>
+
+        <hr>
+
+        <p>
+            Below are two multimedia objects. I wasn't sure what to put, so feel
+            free to find out what I ended up placing.
+        </p>
+        <section id="multimedia">
+            <audio controls>
+                <source src="media/bruh.mp3" type="audio/mp3">
+            </audio> <br>
+            <video width="320" height="240" controls>
+                <source src="media/Rick_Rolled.ogg" type="video/ogg">
+            </video>
         </section>
 
         <hr>
@@ -173,14 +193,29 @@
                         <input type="week"> <br>
                         <input type="submit" value="Submit">
                     </fieldset>
-                  </form> 
+                </form>
             </details>
         </section>
 
+        <hr>
     </main>
 
+
     <footer class="Header_Footer">
-        <h3>You've reached the bottom!</h3>
+        <h3>You've Reached the bottom!</h3>
+        <button onclick="showMore()">Have you actually reached the bottom?</button>
+
+        <template>
+            <h3>Yes you have!</h2>
+        </template>
+
+        <script>
+            function showMore() {
+                var template = document.getElementsByTagName("template")[0];
+                var clone = temp.content.cloneNode(true);
+                document.body.appendChild(clone);
+            }
+        </script>
     </footer>
 </body>
 
