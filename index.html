@@ -8,6 +8,7 @@
     <meta name="description" content="Donald Wolfson's User Page">
     <meta name="author" content="Donald Wolfson">
     <link href="styles.css" type="text/css">
+    <link rel="shortcut icon" href="#">
 </head>
 
 <body>
@@ -212,7 +213,7 @@
         <script>
             function showMore() {
                 var template = document.getElementsByTagName("template")[0];
-                var clone = temp.content.cloneNode(true);
+                var clone = template.content.cloneNode(true);
                 document.body.appendChild(clone);
             }
         </script>
