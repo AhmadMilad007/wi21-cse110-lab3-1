@@ -9,7 +9,7 @@ Webpage: https://donaldwolfson.github.io/cse_110_lab_2/
 7. YouFoundMe
 8. coolcoolcool
 9. 2020sucked
-10. listenToTheBlackkeys
+10. listenToTheBlackKeys
 11. a11yComesFirst
 12. iLoveWebDev
 13. image/jpeg
