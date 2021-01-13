@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Donald Wolfson's User Page</title>
+    <meta name="description" content="Donald Wolfson's User Page">
+    <meta name="author" content="Donald Wolfson">
+</head>
+
+<body>
+    <header class="Header_Footer">
+        <h1>Welcome to my website!</h1>
+        <h2>by Donald Wolfson</h2>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a> |
+        <a href="#whatilooklike">What do I look like?</a> |
+        <a href="#coolconcept">A cool concept I've learned</a> |
+        <a href="#mycats">My Cats</a> |
+        <a href="#form">A Form</a> |
+    </nav>
+
+    <hr>
+
+    <main>
+        <div id="introduction">
+            <h3>Introduction!</h3>
+            <aside>
+                <p>This webpage is part of a lab I'm taking at UCSD for CSE 110!</p>
+            </aside>
+            <p>
+                Hello! My name is Donald Wolfson, I’m a third year Computer
+                Science Major at the University of California, San Diego.
+                I’m also a research intern at the Center for Applied
+                Internet Data Analysis, based at the San Diego Supercomputer
+                Center. I don’t have a favorite programming language, but
+                I’ll list the ones I know in the order of <br> how happy I would
+                be to work with them:
+            </p>
+            <ol>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>C#</li>
+                <li><s>JavaScript</s></li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <section id="whatilooklike">
+            <h3>What do I look like?</h3>
+            <p>It’s not that big of a secret! But for now, you can enjoy
+                this image I made with Adobe Illustrator of myself.</p>
+            <figure>
+                <img src="images/Profile_Pic.png" alt="A picture of me!">
+                <figcaption>This is an image I made that looks almost like me!</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="coolconcept">
+            <p>Below are some cool concepts that I've learned in HTML!</p>
+            <ul>
+                <li>I can color parts of text using <b>span</b>, like <span style="color:#A5FFC9">this!</span></li>
+                <li>There are a lot of ways of bolding text in HTML, like using <strong>strong</strong>, just like that!</li>
+                <li>Incase I want to have some fancy text, I can also <i>italicize</i> it.</li>
+                <li>Another way to italicize text is to emphasize it, <em>just like this!</em></li>
+            </ul>
+            <p>Below is my favorite code in Python to run!</p>
+            <pre>
+                <code>
+                    def main(argv):
+                        print("Hello World!")
+                </code>
+            </pre>
+            <iframe src="canvas.html" height="200" width="200" title="Iframe Example"></iframe>
+            <p>
+                I wish it printed this out, but sadly this is just an iframe 
+                element of a canvas file inside of this directory. <br> 
+                Also, below if a cool image of a SVG circle!
+            </p>
+            <svg width="200" height="200">
+                <circle cx="80" cy="80" r="40" stroke="#A5C9FF" stroke-width="4" fill="#A5FFC9" />
+            </svg>
+        </section>
+
+        <hr>
+
+        <section id="mycats">
+            <p>
+                Below are images of my mom’s cats. They are my chonkers, one is 
+                very chonky (summer), and the other is very old (Cali). They 
+                both don’t like each other, so sadly there will be seperate 
+                images:
+            </p>
+
+            <table>
+                <colgroup>
+                    <col span="2" style="background-color:#A5FFC9">
+                </colgroup>
+                <caption>My wonderful cats</caption>
+                <tr>
+                    <th>Cali</th>
+                    <th>Summer</th>
+                </tr>
+                <tr>
+                    <td>
+                        <picture>
+                            <img src="images/Cali.jpeg" alt="A picture of Cali">
+                        </picture>
+                        <p>She's an old one!</p>
+                    </td>
+                    <td>
+                        <picture>
+                            <img src="images/Summer.png" alt="A picture of Summer">
+                        </picture>
+                        <p>Now that is one Chonk!</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="form">
+            <details>
+                <summary>
+                    Click here to access a form! Don't worry it doesn't go anywhere.
+                </summary>
+                <form>
+                    <fieldset>
+                        <legend>My Amazing Form!</legend>
+                        <label for="fname">Your Name:</label><br>
+                        <input type="text" id="fname" name="fname" value="name"><br>
+                        <label for="Preferred Color">Preffered Color?</label>
+                        <select name="cars" id="cars">
+                            <optgroup label="Preferred Color">
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </optgroup>
+                        </select><br>
+                        <label for="browser">Choose your preffered language:</label>
+                        <input list="languages" name="language" id="language">
+                        <datalist id="languages">
+                            <option value="C++">
+                            <option value="Python">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="JavaScript">
+                        </datalist> <br>
+                        <label for="review">Review of my page:</label> <br>
+                        <textarea id="review" name="my_review" rows="2" cols="40">It was amazing!</textarea><br>
+                        <label for="clickme">Click Me!</label> <br>
+                        <input type="checkbox"> <br>
+                        <label for="color">Favorite Color?</label> <br>
+                        <input type="color"> <br>
+                        <label for="data">Favorite Day?</label> <br>
+                        <input type="date"> <br>
+                        <label for="email">What's your email?</label> <br>
+                        <input type="email"> <br>
+                        <label for="number">Favorite number?</label> <br>
+                        <input type="number"> <br>
+                        <label for="slider">Favorite spot on a slider?</label> <br>
+                        <input type="range"> <br>
+                        <label for="link">Favorite link</label> <br>
+                        <input type="url"> <br>
+                        <label for="link">Your LEAST Favorite week</label> <br>
+                        <input type="week"> <br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                  </form> 
+            </details>
+        </section>
+
+    </main>
+
+    <footer class="Header_Footer">
+        <h3>You've reached the bottom!</h3>
+    </footer>
+</body>
+
+</html>
