@@ -26,8 +26,11 @@ section {
     padding: 10px 20px 10px 20px;
     border-style: solid;
     border-width: medium;
-    border-color: #A882DD;
+    border-color: #E08D79;
     border-radius: 15px;
+    display: block;
+    background-color: #E0EFDE;
+    display: static;
 }
 
 /* Fixed alignment of ordered lists. */
@@ -37,6 +40,7 @@ li, ul {
     margin-bottom: 10px;
     margin-right: 15px;
     margin-left: 15px;
+    display: sticky;
 }
 
 /* Colors any strikethrough blocks with target=_strike with a dark gray. */
@@ -46,7 +50,7 @@ s[target=_strike] {
 
 /* Added a Pseudo-class Selector for links */
 a:hover {
-    background-color: #A882DD;
+    background-color: rgba(224, 239, 222, 0.85);
     color: hsl(50, 100%, 50%);
 }
 a:active {
@@ -70,12 +74,14 @@ h3 + p {
     padding-right: 15px;
     padding-bottom: 25px;
     padding-left: 15px;
+    font-size: 3ex;
 }
 
 /* Color all p siblings of an aside. */
 aside ~ p {
     background-color: #E08D79;
     padding: 60px; 
+    line-height: 2em;
 }
 
 /* Combined two selectors for the intro. */
@@ -83,5 +89,29 @@ aside ~ p {
     padding: 40px;
     text-align: center;
     background: #A882DD;
-    color: white; 
+    color: #FFF; 
+}
+
+/* Added Futura Font */
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/futura.ttf);
+}
+
+/* Edit size/positioning of table. */
+table {
+    display: inline-block;
+}
+
+/* Fixed sizing of my cats */
+img {
+    min-width: 25%;
+    max-width: 50%;
+    min-height: 25%;
+    max-height: 50%;
+}
+
+p {
+    line-height: 1.5em;
+    display: absolute;
 }
