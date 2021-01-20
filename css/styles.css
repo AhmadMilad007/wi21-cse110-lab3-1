@@ -119,6 +119,8 @@ p {
 /* FlexBox CSS Elements */
 .parent {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     height: 300px;
 }
 
@@ -130,4 +132,5 @@ p {
     font-weight: bold;
     font-size: 5em;
     text-align: center;
+    flex-direction: column;
 }
