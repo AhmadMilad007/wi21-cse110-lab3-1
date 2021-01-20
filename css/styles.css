@@ -14,11 +14,16 @@
 /* Universal Selecor, default format for all items. */
 * {
     text-align: center; 
+    margin: auto;
+    padding: auto;
+    height: auto;
+    width: auto;
 }
 
 /* Add some padding to all sections. */
 section {
-    padding: 40px;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
     border-style: solid;
     border-width: medium;
     border-color: #A882DD;
@@ -28,6 +33,10 @@ section {
 /* Fixed alignment of ordered lists. */
 li, ul {
     list-style-position:inside;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 /* Colors any strikethrough blocks with target=_strike with a dark gray. */
@@ -57,6 +66,10 @@ div > h3 {
 /* Color the first p after a h3. */
 h3 + p {
     background-color: #E08D79;
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-left: 15px;
 }
 
 /* Color all p siblings of an aside. */
