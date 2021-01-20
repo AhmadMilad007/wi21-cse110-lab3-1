@@ -35,6 +35,7 @@ section {
     display: block;
     background-color: #E0EFDE;
     display: static;
+    position: sticky;
 }
 
 /* Fixed alignment of ordered lists. */
@@ -45,6 +46,7 @@ li, ul {
     margin-right: 15px;
     margin-left: 15px;
     display: sticky;
+    position: relative;
 }
 
 /* Colors any strikethrough blocks with target=_strike with a dark gray. */
