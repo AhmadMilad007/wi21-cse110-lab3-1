@@ -115,3 +115,19 @@ p {
     line-height: 1.5em;
     display: absolute;
 }
+
+/* FlexBox CSS Elements */
+.parent {
+    display: flex;
+    height: 300px;
+}
+
+.child {
+    padding: 15px;
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+}
