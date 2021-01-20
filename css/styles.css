@@ -85,3 +85,9 @@ aside ~ p {
     background: #A882DD;
     color: white; 
 }
+
+/* Added Futura Font */
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/futura.ttf);
+}
