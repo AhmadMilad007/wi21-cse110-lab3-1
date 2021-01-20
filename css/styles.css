@@ -171,6 +171,6 @@ p {
 /* Swap backgound color when max-width is <= 1,200 */
 @media only screen and (max-width: 1200px) {
     body {
-      background-color: #49416D;
+      background-color: #E08D79;
     }
 }
