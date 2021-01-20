@@ -26,9 +26,10 @@ section {
     padding: 10px 20px 10px 20px;
     border-style: solid;
     border-width: medium;
-    border-color: #A882DD;
+    border-color: #E08D79;
     border-radius: 15px;
-    display: block
+    display: block;
+    background-color: #E0EFDE;
 }
 
 /* Fixed alignment of ordered lists. */
@@ -96,4 +97,12 @@ aside ~ p {
 /* Edit size/positioning of table. */
 table {
     display: inline-block;
+}
+
+/* Fixed sizing of my cats */
+img {
+    min-width: 25%;
+    max-width: 50%;
+    min-height: 25%;
+    max-height: 50%;
 }
