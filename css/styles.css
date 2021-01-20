@@ -11,6 +11,10 @@
     color: white;
 }
 
+#whatilooklike {
+    padding: 100px;
+}
+
 /* Universal Selecor, default format for all items. */
 * {
     text-align: center; 
