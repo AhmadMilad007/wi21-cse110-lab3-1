@@ -7,13 +7,19 @@
     <title>Donald Wolfson's User Page</title>
     <meta name="description" content="Donald Wolfson's User Page">
     <meta name="author" content="Donald Wolfson">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="#">
+    <style>
+        body { 
+            background-color: #E0EFDE;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="Header_Footer">
-        <h1>Welcome to my website!</h1>
-        <h2>by Donald Wolfson</h2>
+    <header class="header_footer">
+        <h1 style="color:#E08D79;">Welcome to my website!</h1>
+        <h2 style="color:#E08D79;">by Donald Wolfson</h2>
     </header>
 
     <nav>
@@ -28,7 +34,7 @@
     <hr>
 
     <main>
-        <div id="introduction">
+        <div class="intro" id="introduction">
             <h3>Introduction!</h3>
             <aside>
                 <p>This webpage is part of a lab I'm taking at UCSD for CSE 110!</p>
@@ -48,7 +54,7 @@
                 <li>Java</li>
                 <li>C</li>
                 <li>C#</li>
-                <li><s>JavaScript</s></li>
+                <li><s target=_strike>JavaScript</s></li>
             </ol>
         </div>
 
@@ -67,7 +73,7 @@
         <hr>
 
         <section id="coolconcept">
-            <p>Below are some cool concepts that I've learned in HTML!</p>
+            <h3>Below are some cool concepts that I've learned in HTML!</h3>
             <ul>
                 <li>I can color parts of text using <b>span</b>, like <span style="color:#A5FFC9">this!</span></li>
                 <li>There are a lot of ways of bolding text in HTML, like using <strong>strong</strong>, just like that!
@@ -96,6 +102,7 @@
         <hr>
 
         <section id="mycats">
+            <h3>My Cats</h3>
             <p>
                 Below are images of my mom’s cats. They are my chonkers, one is
                 very chonky (summer), and the other is very old (Cali). They
@@ -201,7 +208,7 @@
     </main>
 
 
-    <footer class="Header_Footer">
+    <footer class="header_footer">
         <h3>You've Reached the bottom!</h3>
         <button onclick="showMore()">Have you actually reached the bottom?</button>
 

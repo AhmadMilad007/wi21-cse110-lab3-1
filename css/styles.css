@@ -37,7 +37,7 @@ a:hover {
     color: hsl(50, 100%, 50%);
 }
 a:active {
-    background-color: hsla(12, 62%, 68%, 0.75);
+    background-color: #E08D79;
 }
 
 /* Descendant Combinator for headers inside of sections. */
