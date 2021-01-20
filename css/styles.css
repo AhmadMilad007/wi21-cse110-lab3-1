@@ -72,12 +72,14 @@ h3 + p {
     padding-right: 15px;
     padding-bottom: 25px;
     padding-left: 15px;
+    font-size: 3ex;
 }
 
 /* Color all p siblings of an aside. */
 aside ~ p {
     background-color: #E08D79;
     padding: 60px; 
+    line-height: 2em;
 }
 
 /* Combined two selectors for the intro. */
@@ -105,4 +107,8 @@ img {
     max-width: 50%;
     min-height: 25%;
     max-height: 50%;
+}
+
+p {
+    line-height: 1.5em;
 }
