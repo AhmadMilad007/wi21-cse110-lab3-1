@@ -54,7 +54,7 @@ a:hover {
     color: hsl(50, 100%, 50%);
 }
 a:active {
-    background-color: hsl(12, 62%, 68%, 0.75);
+    background-color: hsla(12, 62%, 68%, 0.75);
 }
 
 /* Descendant Combinator for headers inside of sections. */
@@ -167,3 +167,10 @@ p {
 .item-c {
     grid-column: 3 / 4;
 }
+
+/* Swap backgound color when max-width is <= 1,200 */
+@media only screen and (max-width: 1200px) {
+    body {
+      background-color: #49416D;
+    }
+  }
