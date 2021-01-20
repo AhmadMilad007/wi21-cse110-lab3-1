@@ -1,0 +1,70 @@
+/* *
+ * Author: Donald Wolfson
+ * Date: 01/19/2021
+ * */
+
+ /* Class used for the style of both the header and footer. */
+.header_footer {
+    padding: 80px;
+    text-align: center;
+    background: #49416D;
+    color: white;
+}
+
+/* Universal Selecor, default format for all items. */
+* {
+    text-align: center; 
+}
+
+/* Add some padding to all sections. */
+section {
+    padding: 40px;
+}
+
+/* Fixed alignment of ordered lists. */
+li, ul {
+    list-style-position:inside;
+}
+
+/* Colors any strikethrough blocks with target=_strike with a dark gray. */
+s[target=_strike] {
+    color: rgb(50, 50, 50);
+}
+
+/* Added a Pseudo-class Selector for links */
+a:hover {
+    background-color: #A882DD;
+    color: hsl(50, 100%, 50%);
+}
+a:active {
+    background-color: hsla(12, 62%, 68%, 0.75);
+}
+
+/* Descendant Combinator for headers inside of sections. */
+section h3 {
+    text-decoration: underline;
+}
+
+/* Child Selector for headers inside of divs. */
+div > h3 {
+    text-decoration: underline; 
+}
+
+/* Color the first p after a h3. */
+h3 + p {
+    background-color: #E08D79;
+}
+
+/* Color all p siblings of an aside. */
+aside ~ p {
+    background-color: #E08D79;
+    padding: 60px; 
+}
+
+/* Combined two selectors for the intro. */
+#introduction.intro {
+    padding: 40px;
+    text-align: center;
+    background: #A882DD;
+    color: white; 
+}
