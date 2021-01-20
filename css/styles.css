@@ -19,6 +19,10 @@
 /* Add some padding to all sections. */
 section {
     padding: 40px;
+    border-style: solid;
+    border-width: medium;
+    border-color: #A882DD;
+    border-radius: 15px;
 }
 
 /* Fixed alignment of ordered lists. */
