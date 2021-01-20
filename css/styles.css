@@ -1,0 +1,12 @@
+/* *
+ * Author: Donald Wolfson
+ * Date: 01/19/2021
+ * */
+
+ /* Class used for the style of both the header and footer. */
+.header_footer {
+  padding: 80px;
+  text-align: center;
+  background: #49416D;
+  color: #E0EFDE;
+}
